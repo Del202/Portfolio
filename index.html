@@ -1,0 +1,152 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/calculadora.css">
+    <link rel="stylesheet" href="/css/listadetarefa.css">
+    <link rel="stylesheet" href="/css/gerador.css">
+    <script src="/js/script.js" defer></script>
+    <script src="/js/calculadora.js" defer></script>
+    <script src="/js/listadetarefa.js" defer></script>
+    <script src="/js/gerador.js" defer></script>
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+        <p>dev.rk</p>
+    </header>
+
+    <main>
+        <div class="container-sobre">
+            <section id="sobre">
+                <img src="/img/eu.jpg" alt="Foto de Perfil" class="profile-image">
+                <h1 style="text-decoration: underline; margin-top: 8px;">dev.rk</h1>
+                <h2>Sobre Mim:</h2>
+                <div class="bio-scroll">
+                    <p class="bio">Sou um desenvolvedor web em constante evolução, com foco em <strong>Back-End</strong>
+                        e <strong>Front-End</strong>. Desde <strong>outubro de 2024</strong>, venho estudando
+                        programação de forma consistente, com projetos práticos e foco em aplicar o conhecimento em
+                        situações reais. Atualmente estou construindo meu portfólio com <strong>HTML</strong>,
+                        <strong>CSS</strong> e <strong>JavaScript</strong>, mas também já desenvolvi projetos utilizando
+                        <strong>Node.js</strong>, <strong>MySQL</strong> e ferramentas como <strong>Postman</strong>
+                        (para testes de API) e <strong>DBeaver CE</strong> (para gerenciamento de banco de
+                        dados).<br><br>
+
+                        Tenho como objetivo atuar profissionalmente como desenvolvedor até <strong>2026</strong>,
+                        contribuindo com soluções funcionais, limpas e seguras.<br><br>
+
+                        Minha trajetória é marcada pela <strong>autodisciplina</strong>, <strong>curiosidade
+                            técnica</strong> e <strong>resiliência diante de desafios</strong>. Gosto de aprender na
+                        prática, resolver bugs com persistência e transformar ideias em códigos que funcionam. Já
+                        desenvolvi sistemas com <strong>autenticação</strong>, <strong>rotas protegidas</strong>,
+                        <strong>integração com banco de dados</strong> e <strong>interfaces
+                            responsivas</strong>.<br><br>
+
+                        Tenho também interesse por áreas como <strong>segurança digital</strong>, <strong>mobile com
+                            React Native</strong>, e já estudei ferramentas como <strong>Firebase</strong>,
+                        <strong>Git</strong>, e <strong>Wireshark</strong>.<br><br>
+                        Busco constantemente evoluir, tanto tecnicamente quanto pessoalmente, com a meta clara de me
+                        tornar um <strong>desenvolvedor completo</strong> e confiável no mercado. Valorizo
+                        <strong>ambientes colaborativos</strong> e estou sempre pronto para aprender, compartilhar e
+                        crescer junto com a equipe.
+                    </p>
+                </div>
+
+            </section>
+            <section>
+                <h2>Projetos:</h2>
+                <ul>
+                    <li><button class="buttonProjeto" onclick="projeto('campo-calculador', this)">Calculadora</button>
+                    </li>
+                    <li><button class="buttonProjeto" onclick="projeto('area-geradorDeSenha', this)">Gerador de
+                            Senhas</button></li>
+                    <li><button class="buttonProjeto" onclick="projeto('area-listadetarefa', this)">Lista de
+                            Tarefas</button></li>
+                </ul>
+                <article>
+                    <div id="area-projeto-calculadora">
+                        <div id="campo-calculador" class="projeto">
+                            <input type="text" id="display" disabled>
+                            <div class="seletor-buttons-calculadora">
+                                <button class="buttons-calculadora" onclick="inserirNumero('7')">7</button>
+                                <button class="buttons-calculadora" onclick="inserirNumero('8')">8</button>
+                                <button class="buttons-calculadora" onclick="inserirNumero('9')">9</button>
+                                <button class="buttons-calculadora" onclick="inserirNumero('4')">4</button>
+                                <button class="buttons-calculadora" onclick="inserirNumero('5')">5</button>
+                                <button class="buttons-calculadora" onclick="inserirNumero('6')">6</button>
+                                <button class="buttons-calculadora" onclick="inserirNumero('1')">1</button>
+                                <button class="buttons-calculadora" onclick="inserirNumero('2')">2</button>
+                                <button class="buttons-calculadora" onclick="inserirNumero('3')">3</button>
+                                <button class="buttons-calculadora" onclick="inserirNumero('0')">0</button>
+                                <button class="buttons-calculadora" onclick="limpar()">C</button>
+                                <button class="buttons-calculadora" onclick="multiplicacao('')">*</button>
+                                <button class="buttons-calculadora" onclick="menos('')">-</button>
+                                <button class="buttons-calculadora" onclick="divisao('')">/</button>
+                                <button class="buttons-calculadora" onclick="mais('')">+</button>
+                                <button class="buttons-calculadora" id="button-central" onclick="resultado()">=</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div id="area-geradorDeSenha" class="projeto">
+                        <div id="fundo-div-gerador">
+                            <h2>Gerador de Senhas</h2>
+                            <div class="campo-senha">
+                                <input type="text" id="senhaGerada" placeholder="dev.rk" disabled>
+                                <button id="copiarSenha" onclick="copiarSenha()" class="bttn"
+                                    aria-label="Copiar senha">📋</button>
+                            </div>
+                            <p class="inserirSenha"></p>
+                            <button id="gerarSenha" onclick="gerarSenha()">Gerar Senha</button>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div id="area-listadetarefa" class="projeto">
+                        <div id="fundoPrimario-div-listadetarefa">
+                            <h2>Gerador de Tarefas</h2>
+                            <input type="text" id="tarefaInput" placeholder="Digite uma tarefa...">
+                            <p class="inserirTarefa"></p>
+                            <button class="btns-listadetarefa" id="adicionarTarefa"
+                                onclick="adicionarTarefa()">Adicionar Tarefa</button>
+                            <div name="fundo-div-listadetarefa">
+                                <h3>Listas de Tarefas</h3>
+                                <div class="campo-listaTarefas" id="campo-tarefa">
+                                    <ul class="Tarefass">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section id="contatos">
+                <div class="campo-contatos">
+                    <h2>Contatos:</h2>
+                    <p>email:</p>
+                    <p class="ctts" style="text-decoration: underline;"> erikdel200@gmail.com</p>
+                    <p>número:</p>
+                    <p style="text-decoration: underline;"> 62992598234</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Meu Portfólio</p>
+        <p>Desenvolvido por dev.rk</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(250, 250, 250);
+    line-height: normal;
+    position: relative;
+    min-height: 100vh;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-image: url('/img/Portfolio.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 2px 3px 0 rgb(6, 247, 255);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio {
+    padding: 14px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.bio-scroll {
+    border: solid 2px rgba(6, 247, 255, 0.562);
+    box-shadow: 0 0 5px 0px rgb(6, 247, 255);
+    max-height: 300px;
+    width: 800px;
+    overflow-y: auto;
+    margin: 30px;
+    padding: 22px;
+    padding-right: 10px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.651);
+    scrollbar-width: thin;
+    scrollbar-color: rgba(6, 247, 255, 0.562) rgba(0, 0, 0, 0.651);
+}
+
+.bio-scrolll {
+    width: 800px;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.651);
+    scrollbar-width: thin;
+    scrollbar-color: rgba(6, 247, 255, 0.562) rgba(0, 0, 0, 0.651);
+}
+
+p {
+    font-size: 18px;
+}
+
+img {
+    box-shadow: 0px 0px 3px 3px rgb(6, 247, 255);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 2px black;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    font-size: 24px;
+}
+
+.container-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.596);
+    font-size: 20px;
+    padding: 50px;
+    border: solid 2px black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(6, 247, 255);
+    margin: 40px;
+    margin-bottom: 80px;
+    margin-top: 70px;
+}
+
+section {
+    margin: 30px;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: wheat;
+    box-shadow: 2px 2px 2px 3px rgb(6, 247, 255);
+    ;
+    padding: 10px;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white;
+    border: solid 2px rgb(6, 247, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+li {
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonProjeto {
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white;
+    border: solid 2px rgba(6, 247, 255, 0.507);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.buttonProjeto:hover {
+    background-color: rgba(0, 0, 0, 0.651);
+    border: solid 2px rgb(6, 247, 255);
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+
+.buttonProjeto.active {
+    background-color: rgba(0, 0, 0, 0.651);
+    border: solid 2px rgb(6, 247, 255);
+}
+
+.projeto {
+    display: none;
+}
+
+.campo-contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inserirSenha {
+    color: rgb(0, 255, 21);
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ctts {
+    margin-bottom: 15px;
+}
