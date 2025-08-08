@@ -1,0 +1,11 @@
+# Arquivos do sistema (Mac)
+.DS_Store
+
+# Configurações do VSCode
+.vscode/
+
+# Arquivos temporários do Linux
+*~
+
+# Logs
+*.log
