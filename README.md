@@ -19,11 +19,11 @@ Agora que concluí este portfólio, pretendo nos próximos projetos usar framewo
 - HTML5
 - CSS3
 - JavaScript
-- Node.js (em projetos futuros)
-- MySQL (em projetos futuros)
 - VSCode (editor)
 - Git e GitHub
 
+- Node.js (em projetos futuros)
+- MySQL (em projetos futuros)
 ---
 
 ## 📌 Autor
