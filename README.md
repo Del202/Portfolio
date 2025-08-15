@@ -8,7 +8,7 @@ No início, meu conhecimento era limitado ao básico de HTML, CSS e um pouco de 
 
 Nesse período, comecei outro projeto — um site com backend em Node.js e banco de dados MySQL — para colocar meus conhecimentos em prática. Esse projeto também estou desenvolvendo sozinho e será publicado futuramente como parte do meu portfólio para mostrar minha evolução e domínio no backend.
 
-Depois de ganhar mais confiança com lógica e servidores, voltei para o frontend com uma nova visão. Decidi recomeçar do zero em HTML e CSS puros, aplicando boas práticas e códigos mais limpos. O resultado foi um portfólio funcional, bonito e feito com base no que aprendi com esforço e persistência.
+Depois de ganhar mais confiança com lógica e servidores, voltei para o frontend com uma nova visão. Decidi refazer do zero em HTML e CSS puros, aplicando boas práticas e códigos mais limpos. O resultado foi um portfólio funcional, bonito e feito com base no que aprendi com esforço e persistência.
 
 Agora que concluí este portfólio, pretendo nos próximos projetos usar frameworks como React, além de aprofundar meus conhecimentos em Node.js, criação de APIs, integração com bancos de dados e outros recursos modernos do desenvolvimento web. Um dos meus próximos objetivos é desenvolver um sistema completo de Marketplace, onde poderei aplicar na prática tudo o que venho aprendendo — tanto no frontend quanto no backend. Continuo firme na missão de evoluir a cada projeto e construir soluções mais completas e profissionais.
 
